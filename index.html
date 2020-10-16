@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Interpretazione di Klein</title>
+
+    <link rel="icon" type="image/png" href="imgs/icon.png"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+</head>
+
+<style>
+    .inc {
+        display: inline-block;
+        background-color: #00000000;
+        border: 0;
+        color: #000000;
+        font-size: 16pt;
+        font-family: 'Georgia';
+    }
+</style>
+
+<body style="display: block; padding: 0; margin: 0; overflow: hidden;">
+
+    <script src="js/utils/coordinateSystem.js"></script>
+    <script src="js/utils/controls.js"></script>
+    <script src="js/kleinInt.js"></script>
+
+    <input id="nSlider" type="number" min="2" max="30" value="5" step="1" class="inc"
+        onchange="updateEquation(this.value)">
+
+</body>
+
+</html>
